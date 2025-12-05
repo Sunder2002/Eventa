@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Eventa – Luxury Event Planning
 
-This contains everything you need to run your app locally.
+Eventa is Hyderabad's most trusted luxury event planner. We create authentic, memorable experiences for weddings, parties, and corporate events.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1sa5y90IOVedSk1izHB3yWFJueltgp8KE
+## Features
+- Modern React + Vite + TypeScript architecture
+- Modular, production-grade code structure
+- Custom theming with Tailwind CSS
+- Error boundaries and loading states
+- Type-safe, maintainable code
+- Linting and formatting with ESLint + Prettier
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
+- Node.js (v18+ recommended)
 
+### Installation
+```bash
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Development
+```bash
+npm run dev
+```
+Visit [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Lint & Format
+```bash
+npx eslint . --ext .ts,.tsx
+npx prettier --write .
+```
+
+## Project Structure
+- `components/` – Reusable React components
+- `services/` – API and utility services
+- `assets/` – Static images and assets
+- `constants.ts` – App-wide constants
+- `types.ts` – TypeScript types/interfaces
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first.
+
+## License
+[MIT](LICENSE)

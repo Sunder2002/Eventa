@@ -11,34 +11,34 @@ const Hero: React.FC = () => {
           backgroundImage: 'url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")', // Elegant wedding/event setup
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-eventa-cream/40 via-transparent to-eventa-green/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-eventa-cream/20 via-eventa-dark/40 to-eventa-green/95"></div>
       </div>
 
       {/* Content */}
       <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-20">
-        <span className="inline-block py-1 px-3 rounded-full bg-eventa-gold/20 text-eventa-dark backdrop-blur-sm border border-eventa-gold/40 text-xs tracking-[0.2em] uppercase mb-6 font-bold animate-fade-in-up">
+        <span className="inline-block py-1 px-3 rounded-full bg-eventa-gold/30 text-eventa-dark backdrop-blur-sm border border-eventa-gold/60 text-xs tracking-[0.2em] uppercase mb-6 font-bold animate-fade-in-up shadow-lg">
           Hyderabad's Premier Event Planner
         </span>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-eventa-dark mb-6 leading-tight drop-shadow-sm animate-fade-in-up delay-100">
-          We Curate <span className="text-eventa-green italic">Timeless</span> <br/> Celebrations
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] animate-fade-in-up delay-100">
+          We Curate <span className="text-eventa-gold italic drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">Timeless</span> <br/> Celebrations
         </h1>
         
-        <p className="mt-4 max-w-2xl text-lg md:text-xl text-eventa-dark/80 font-sans mb-10 animate-fade-in-up delay-200">
+        <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/95 font-sans mb-10 drop-shadow-[0_3px_8px_rgba(0,0,0,0.7)] animate-fade-in-up delay-200">
           From intimate gatherings to grand weddings, Eventa transforms your vision into flawless reality in Hyderabad & Telangana.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
           <a 
             href="#contact" 
-            className="group bg-eventa-green text-eventa-cream px-8 py-4 rounded-none border border-eventa-green hover:bg-transparent hover:text-eventa-green transition-all duration-300 font-serif text-lg flex items-center justify-center gap-2"
+            className="group bg-eventa-green text-white px-8 py-4 rounded-none border border-eventa-green hover:bg-transparent hover:text-eventa-green transition-all duration-300 font-serif text-lg flex items-center justify-center gap-2 shadow-lg drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
             Plan My Event
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform"/>
           </a>
           <a 
             href="#services" 
-            className="group bg-transparent text-eventa-green px-8 py-4 rounded-none border border-eventa-green hover:bg-eventa-green hover:text-eventa-cream transition-all duration-300 font-serif text-lg"
+            className="group bg-transparent text-white px-8 py-4 rounded-none border-2 border-white hover:bg-eventa-green hover:text-white hover:border-eventa-green transition-all duration-300 font-serif text-lg shadow-lg drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
             Explore Services
           </a>

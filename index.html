@@ -2,14 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Eventa | Turning Moments into Memories</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Eventa is Hyderabad's most trusted luxury event planner. We create authentic, memorable experiences for weddings, parties, and corporate events." />
+    <meta name="keywords" content="Eventa, Event Planner, Hyderabad, Luxury Events, Weddings, Corporate Events, Authentic, Trusted, Professional" />
+    <meta name="author" content="Eventa Team" />
+    <meta name="theme-color" content="#C5A059" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Eventa | Turning Moments into Memories" />
+    <meta property="og:description" content="Plan your next event with Hyderabad's most trusted luxury event planner." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eventa.com" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eventa | Turning Moments into Memories" />
+    <meta name="twitter:description" content="Hyderabad's most trusted luxury event planner" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" type="font/css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        content: [
+          './index.html',
+          './**/*.{html,js,ts,jsx,tsx}'
+        ],
         theme: {
           extend: {
             fontFamily: {
@@ -20,7 +52,7 @@
               eventa: {
                 gold: '#C5A059',
                 cream: '#FDFCF8',
-                green: '#3A4D39', // Olive/Sage green from flyer
+                green: '#3A4D39',
                 lightGreen: '#739072',
                 dark: '#1C1C1C',
                 beige: '#ECE3CE'
@@ -50,6 +82,13 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #C5A059;
       }
+
+      /* Text contrast enhancements */
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
       .animate-fade-in-up {
         animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
@@ -65,6 +104,18 @@
           transform: translateY(0);
         }
       }
+
+      .animate-fade-in-down {
+        animation: fadeInDown 0.28s ease-out forwards;
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      @keyframes fadeInDown {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       
       .animate-slow-zoom {
         animation: slowZoom 20s infinite alternate;
@@ -74,19 +125,53 @@
         from { transform: scale(1); }
         to { transform: scale(1.1); }
       }
+
+      /* Production-level button focus states */
+      button:focus-visible,
+      a:focus-visible {
+        outline: 2px solid #C5A059;
+        outline-offset: 2px;
+      }
+
+      /* Subtle shadow for root for depth and premium feel */
+      #root {
+        box-shadow: 0 2px 24px 0 rgba(60, 50, 20, 0.08);
+        border-radius: 12px;
+        background: #FDFCF8;
+        min-height: 100vh;
+      }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
-  }
-}
-</script>
-</head>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Eventa",
+      "description": "Luxury event planning services in Hyderabad",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd floor, Oftog Business Solutions Pvt Ltd, Road No 1, 1st cabin",
+        "addressLocality": "Banjara Hills",
+        "addressRegion": "Hyderabad",
+        "postalCode": "500034",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91 8686999501",
+      "email": "eventseventa@gmail.com",
+      "url": "https://eventa.com",
+      "serviceType": ["Wedding Planning", "Corporate Events", "Birthday Parties", "Event Decoration", "Event Photography", "Venue Selection"],
+      "areaServed": {
+        "@type": "City",
+        "name": "Hyderabad",
+        "areaServed": "Telangana"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

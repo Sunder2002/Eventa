@@ -15,19 +15,19 @@ export const SERVICES: ServiceItem[] = [
     id: 'wedding',
     title: 'Wedding',
     description: 'Breathtaking mandap decor and cinematic photography to capture every ritual of your big day.',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Indian wedding decor
+    image: '/assets/mandap.jpeg', // This must match the filename in your assets folder
   },
   {
     id: 'birthday',
     title: 'Birthday Party',
     description: 'Vibrant balloon themes and venue styling that creates the perfect backdrop for your celebration.',
-    image: 'https://images.unsplash.com/photo-1530103862676-de3c9da59af7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Birthday decor
+    image: '/assets/birthday.jpg', // Local image
   },
   {
-    id: 'reunion',
-    title: 'Reunion',
-    description: 'Cozy venue selection and nostalgic ambiance creation for reconnecting with loved ones.',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Gathering
+    id: 'mehandi',
+    title: 'Mehandi & Mangala Snanam',
+    description: 'Traditional mehandi designs, colorful rangoli patterns, and auspicious ceremonies with authentic cultural decor.',
+    image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Traditional decor
   },
   {
     id: 'corporate',
