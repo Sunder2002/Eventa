@@ -16,7 +16,7 @@ const About: React.FC = () => {
              <div className="space-y-4 mt-8">
                 <div className="relative overflow-hidden rounded-lg shadow-xl h-64 bg-eventa-lightGreen/20">
                    <img 
-                     src="https://images.unsplash.com/photo-1519225468707-1d8986c75c5e?w=400&h=320&fit=crop&q=80" 
+                     src="/assets/vs1.jpg"
                      alt="Floral event decoration with vibrant flowers" 
                      className="w-full h-full object-cover rounded-lg"
                      loading="lazy"
@@ -24,7 +24,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="relative overflow-hidden rounded-lg shadow-xl h-48 bg-eventa-lightGreen/20">
                    <img 
-                     src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=256&fit=crop&q=80" 
+                     src="/assets/vs2.jpg"
                      alt="Elegant venue setup for weddings" 
                      className="w-full h-full object-cover rounded-lg"
                      loading="lazy"
@@ -34,7 +34,7 @@ const About: React.FC = () => {
              <div className="space-y-4">
                 <div className="relative overflow-hidden rounded-lg shadow-xl h-48 bg-eventa-lightGreen/20">
                    <img 
-                     src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=256&fit=crop&q=80" 
+                     src="/assets/vs3.jpg"
                      alt="Professional event photography capturing moments" 
                      className="w-full h-full object-cover rounded-lg"
                      loading="lazy"
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="relative overflow-hidden rounded-lg shadow-xl h-64 bg-eventa-lightGreen/20">
                    <img 
-                     src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=320&fit=crop&q=80" 
+                     src="/assets/vs4.jpg"
                      alt="Close-up details of event decoration and setup" 
                      className="w-full h-full object-cover rounded-lg"
                      loading="lazy"

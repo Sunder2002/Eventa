@@ -5,9 +5,10 @@ export const COMPANY_INFO = {
   tagline: "Turning Moments into Memories",
   description: "Eventa curates and executes flawless events in Hyderabad, Telangana. We specialize in transforming venues, capturing timeless moments, and creating breathtaking decorations that ensure your occasion is stress-free and successful.",
   address: "2nd floor, Oftog Business Solutions Pvt Ltd, Road No 1, 1st cabin, Banjara Hills, Hyderabad, Telangana 500034",
-  phones: ["+91 8686999501", "+91 8520828585"],
+  phones: ["+91 9908095092", "+91 9014366645"], // updated phone numbers
   email: "eventseventa@gmail.com",
-  instagram: "@eventseventa"
+  instagramHandle: "@eventa.hyd",
+  instagramUrl: "https://www.instagram.com/eventa.hyd?igsh=djg4cjVzYmVseGZi"
 };
 
 export const SERVICES: ServiceItem[] = [
@@ -25,9 +26,9 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: 'mehandi',
-    title: 'Mehandi & Mangala Snanam',
+    title: 'Haldi & Mehandi', // renamed from "Mehandi & Mangala Snanam"
     description: 'Traditional mehandi designs, colorful rangoli patterns, and auspicious ceremonies with authentic cultural decor.',
-    image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Traditional decor
+    image: '/assets/mangala%20snanam.jpg', // updated to local asset (encode space as %20)
   },
   {
     id: 'corporate',
@@ -39,13 +40,13 @@ export const SERVICES: ServiceItem[] = [
     id: 'dhoti-saree',
     title: 'Dhoti & Saree Ceremony',
     description: 'Traditional floral arrangements and cultural decor themes honoring your family traditions.',
-    image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Traditional decor
+    image: '/assets/dhoti%20function.jpg', // updated to local asset (encode space as %20)
   },
   {
     id: 'anniversary',
     title: 'Anniversary',
     description: 'Romantic lighting, elegant table settings, and intimate venue choices for your special milestone.',
-    image: 'https://images.unsplash.com/photo-1522673607200-1645062cd958?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', // Romantic setting
+    image: '/assets/anniversary.jpg', // updated to local asset
   }
 ];
 

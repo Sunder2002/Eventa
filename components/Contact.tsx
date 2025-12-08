@@ -72,9 +72,16 @@ const Contact: React.FC = (): JSX.Element => {
                        </div>
                        <div>
                           <h3 className="font-bold text-eventa-green mb-1 uppercase text-sm tracking-wider">Follow Our Work</h3>
-                          <p className="text-gray-800 font-sans font-medium">
-                            {COMPANY_INFO.instagram}
-                          </p>
+                          <a
+                            href={COMPANY_INFO.instagramUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-800 font-sans font-medium inline-flex items-center gap-2 hover:text-eventa-gold transition-colors"
+                            aria-label="Open Eventa Instagram profile in a new tab"
+                          >
+                            {COMPANY_INFO.instagramHandle}
+                            <ExternalLink size={12} aria-hidden="true" />
+                          </a>
                        </div>
                     </div>
                 </div>
